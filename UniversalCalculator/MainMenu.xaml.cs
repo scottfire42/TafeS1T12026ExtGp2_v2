@@ -42,9 +42,9 @@ namespace Calculator
 
 		}
 
-		private void miscConvButton_Click(object sender, RoutedEventArgs e)
+		private void OpenMiscConverter_Click(object sender, RoutedEventArgs e)
 		{
-
+			Frame.Navigate(typeof(MiscConverter));
 		}
 
 		private void exitButton_Click(object sender, RoutedEventArgs e)

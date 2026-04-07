@@ -1,4 +1,12 @@
-﻿<Page
+﻿<!--
+	Title: ICTICT449 Version Control Assignment 2
+	Team Members: Scott Harris, Ana Dias De Resende, Towseef Ahmed
+	Create Date: 07-Apr-2026
+	Team: TafeS1T12026ExtGp2_v2
+	
+-->
+
+<Page
     x:Class="Calculator.MainMenu"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -7,6 +15,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
 
 	<Page.Resources>
 		<Style TargetType="Button">
@@ -41,7 +50,7 @@
 				<Button x:Name="currencyConvButton" Click="currencyConvButton_Click">Currency Converter</Button>
 			</StackPanel>
 			<StackPanel x:Name="miscConvPanel">
-				<Button x:Name="miscConvButton" Click="miscConvButton_Click">Miscellaneous Converter</Button>
+				<Button x:Name="miscConvButton" Click="OpenMiscConverter_Click">Miscellaneous Converter</Button>
 			</StackPanel>
 			<StackPanel x:Name="spacerPanel" Height="50"></StackPanel>
 			<StackPanel x:Name="exitPanel">
@@ -49,4 +58,6 @@
 			</StackPanel>
 		</StackPanel>
 	</StackPanel>
+
 </Page>
+
