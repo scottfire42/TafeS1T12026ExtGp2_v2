@@ -1,0 +1,72 @@
+﻿<Page
+    x:Class="Calculator.MiscConverter"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Calculator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+	Foreground="Black"
+    Background="White">
+
+	<Grid Margin="20" RequestedTheme="Light">
+
+		<StackPanel>
+
+			<TextBlock Text="Distance (Meter)" FontWeight="Bold" Foreground="Black"/>
+			<TextBox x:Name="txtMeter" Width="150"/>
+
+			<Button Content="Convert Distance"
+                    Width="150"
+                    Margin="0,10,0,0"
+                    Click="ConvertDistance_Click"/>
+
+			<TextBlock x:Name="lblDistanceResult" Margin="0,5,0,15" Foreground="Black"/>
+
+
+			<TextBlock Text="Mass (Kilogram)" FontWeight="Bold" Foreground="Black"/>
+			<TextBox x:Name="txtKilogram" Width="150"/>
+
+			<Button Content="Convert Mass"
+                    Width="150"
+                    Margin="0,10,0,0"
+                    Click="ConvertMass_Click"/>
+
+			<TextBlock x:Name="lblMassResult" Margin="0,5,0,15" Foreground="Black"/>
+
+
+			<!-- Temperature Converter -->
+
+			<TextBlock Text="Temperature (Celsius)" FontWeight="Bold" Foreground="Black"/>
+			<TextBox x:Name="txtCelsius" Width="150" Foreground="Black"/>
+
+			<Button Content="Convert Temperature"
+                    Width="150"
+                    Margin="0,10,0,0"
+                    Click="ConvertTemperature_Click"/>
+
+			<TextBlock x:Name="lblTempResult" Margin="0,5,0,15" Foreground="Black"/>
+
+
+			<!-- Pressure Converter -->
+
+			<TextBlock Text="Pressure (Kpa)" FontWeight="Bold" Foreground="Black"/>
+			<TextBox x:Name="txtKpa" Width="150"/>
+
+			<Button Content="Convert Pressure"
+                    Width="150"
+                    Margin="0,10,0,0"
+                    Click="ConvertPressure_Click"/>
+
+			<TextBlock x:Name="lblPressureResult" Margin="0,5,0,15" Foreground="Black"/>
+
+			<Button Content="Back to Menu"
+        Width="180"
+        Margin="0,20,0,0"
+        Click="Exit_Click"/>
+
+		</StackPanel>
+
+	</Grid>
+
+</Page>
