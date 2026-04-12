@@ -40,20 +40,20 @@
 			<StackPanel>
 				<TextBlock FontSize="20" FontWeight="Bold" Foreground="Black" HorizontalAlignment="Center">Universal Calculator</TextBlock>
 			</StackPanel>
-			<StackPanel x:Name="mathsCalcPanel">
+			<StackPanel x:Name="mathsCalcPanel"><!--Contains button for original simple calculator-->
 				<Button x:Name="mathsCalcButton" Click="mathsCalcButton_Click">Maths Calculator</Button>
 			</StackPanel>
-			<StackPanel x:Name="mortgageCalcPanel">
+			<StackPanel x:Name="mortgageCalcPanel"><!--Contains button for Mortgage Calculator-->
 				<Button x:Name="mortgageCalcButton" Click="mortgageCalcButton_Click">Mortgage Calculator</Button>
 			</StackPanel>
-			<StackPanel x:Name="currencyConvPanel">
+			<StackPanel x:Name="currencyConvPanel"><!--Contains button for Currency Converter-->
 				<Button x:Name="currencyConvButton" Click="currencyConvButton_Click">Currency Converter</Button>
 			</StackPanel>
-			<StackPanel x:Name="miscConvPanel">
+			<StackPanel x:Name="miscConvPanel"><!--Contains button for Miscellaneous Converter-->
 				<Button x:Name="miscConvButton" Click="OpenMiscConverter_Click">Miscellaneous Converter</Button>
 			</StackPanel>
 			<StackPanel x:Name="spacerPanel" Height="50"></StackPanel>
-			<StackPanel x:Name="exitPanel">
+			<StackPanel x:Name="exitPanel"><!--Contains button for Exiting Application-->
 				<Button x:Name="exitButton" Click="exitButton_Click">Exit</Button>
 			</StackPanel>
 		</StackPanel>
