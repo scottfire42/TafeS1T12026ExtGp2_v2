@@ -51,6 +51,7 @@
 			</StackPanel>
 			<StackPanel x:Name="miscConvPanel"><!--Contains button for Miscellaneous Converter-->
 				<Button x:Name="miscConvButton" Click="OpenMiscConverter_Click">Miscellaneous Converter</Button>
+				<Button Content="Trip Calculator" Click="Trip_Click"/>
 			</StackPanel>
 			<StackPanel x:Name="spacerPanel" Height="50"></StackPanel>
 			<StackPanel x:Name="exitPanel"><!--Contains button for Exiting Application-->

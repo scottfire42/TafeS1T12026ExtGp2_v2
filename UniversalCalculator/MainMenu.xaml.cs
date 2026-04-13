@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -49,6 +50,18 @@ namespace Calculator
 		private void OpenMiscConverter_Click(object sender, RoutedEventArgs e)
 		{
 			this.Frame.Navigate(typeof(MiscConverter));
+		}
+
+		private async void Trip_Click(object sender, RoutedEventArgs e)
+		{
+			var dialog = new ContentDialog()
+			{
+				Title = "Trip Calculator",
+				Content = "Trip calculator c# code will be developed later.",
+				CloseButtonText = "OK"
+			};
+
+			await dialog.ShowAsync();
 		}
 
 		private void exitButton_Click(object sender, RoutedEventArgs e)
